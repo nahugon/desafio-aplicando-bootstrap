@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(245, 225, 218);
+}
+
+
+
+/* ESTILOS AL NAV */
+nav{
+  margin: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: solid whitesmoke;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+  
+  
+
+}
+
+nav ul li{
+  list-style: none;
+  
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  
+  
+  
+}
+nav ul li a{
+  text-decoration: none;
+}
+
+header h1{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+/* estilos de main */
+
+.mainNosotros{
+  height: 60vh;
+  display: grid;
+  grid-template-areas: "mainP mainP"
+                      "imagen1 imagen2"
+                      "imagen3 imagen4"
+                      "parrafo parrafo";
+                      justify-content: center;
+                      justify-items: center;
+                      text-align: center;
+                      
+}
+
+
+
+
+
+.mainP{
+  grid-area: mainP;
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+
+
+.mainP span{
+color: whitesmoke
+}
+
+
+.imagen1{
+  grid-area: imagen1;
+  
+
+}
+
+.imagen2{
+  grid-area: imagen2;
+  
+
+}
+
+.imagen3{
+  grid-area: imagen3;
+  
+}
+
+.imagen4{
+  grid-area: imagen4;
+  
+}
+
+.parrafo{
+  grid-area: parrafo;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+div img{
+  width: 50%;
+  
+}
+
+/* estilos del footer */
+
+footer {
+  margin-top: 12rem;
+}
+footer p{
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) {
+
+  /* estilos nav */
+  nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+  
+      
+      
+  
+  }
+
+
+  /* estilos del main */
+
+.sectionNosotros{
+  display: block;
+  grid-area: img;
+}
+
+.mainNosotros{
+  display: grid;
+  grid-template-areas: "mainP mainP mainP mainP"
+                          "img img img img"
+                      "imagen1 imagen2 imagen3 imagen4"
+                      "parrafo parrafo parrafo parrafo";
+                      column-gap: 2rem;
+                      
+}
+
+.footerNosotros {
+  margin-top: 18rem;
+  
+}
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  /* ESTILOS AL NAV */
+  nav{
+      margin: 2.0rem;
+  }
+  
+  nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+  
+      
+      
+  
+  }
+  
+  
+  
+  
+      /* estilos del main */
+      
+    
+      .mainNosotros{
+          display: grid;
+          grid-template-areas: "mainP mainP mainP mainP"
+                              "imagen1 imagen2 imagen3 imagen4"
+                              "parrafo parrafo parrafo parrafo";
+                              column-gap: 2rem;
+      }
+  
+      .mainP{
+          align-self: center;
+  
+      }
+  }
+  
+
+  /*animaciones para el desafio  */
+
+.mainP :hover{
+  font-size: 50px;
+  
+    
+}
+
+.imagen1 :hover{
+  filter: grayscale(80%);
+  
+
+}
+
+.imagen2 :hover{
+  filter: grayscale(80%);
+  
+
+}
+
+.imagen3 :hover{
+  filter: grayscale(80%);
+  
+}
+
+.imagen4 :hover{
+  filter: grayscale(80%);
+  
+}
